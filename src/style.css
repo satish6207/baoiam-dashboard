@@ -42,6 +42,7 @@ body {
   }
 
 /* SIDEBAR */
+
 /* CONTENT */
 #content {
 	position: relative;
@@ -93,6 +94,8 @@ nav .form-group input {
 	transition: all .3s ease;
 }
 /* NAVBAR */
+
+
                             /*   MAIN  */
 .btn-row button {
     display: inline-block;
