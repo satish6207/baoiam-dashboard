@@ -40,9 +40,13 @@ body {
   .sidebar svg {
     margin-right: 20px;
   }
+  #close{
+    text-align: end;
+    margin-bottom: -30px;
+    display: none;
+  }
 
 /* SIDEBAR */
-
 /* CONTENT */
 #content {
 	position: relative;
@@ -87,15 +91,16 @@ nav .form-group input {
 	width: 100%;
 	background: rgb(237, 236, 236);
 	border: 0px solid rgb(177, 177, 177);
-	border-radius: 15px ;
+	border-radius: 1rem ;
 	outline: none;
-	padding: 25px 70px 25px 16px;
-    box-shadow: 0 2px 5px rgba(56, 56, 56, 0.381);
+	padding: 22px 70px 22px 16px;
+  box-shadow: 0 2px 5px rgba(56, 56, 56, 0.381);
 	transition: all .3s ease;
 }
+.bi-bell{
+  color: orangered;
+}
 /* NAVBAR */
-
-
                             /*   MAIN  */
 .btn-row button {
     display: inline-block;
@@ -192,8 +197,6 @@ nav .form-group input {
     background-color: orangered;
     display: none; 
 }
-
-
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px; 
@@ -217,17 +220,20 @@ nav .form-group input {
     margin: 10px 0 0 0; 
     font-size: 0.9rem; 
 }
+nav form .form-group input {
+  width: 100%; 
+  max-width: none;
+  padding: 15px 60px 15px 15px;
+}
 }
 @media only screen and (max-width: 768px) {
   .sidebar {
       display: none;
   }
-
   #content {
       width: 100%;
       left: 0;
   }
-
   #sidebar.hide + #content {
       width: 100%;
       left: 0;
@@ -246,7 +252,9 @@ nav .form-group input {
   }
   nav form .form-group input {
     width: 100%; 
-    max-width: none; 
+    max-width: none;
+    padding: 15px 60px 15px 15px;
+    border-radius: .7rem;
 }
 .top-text{
   display: none;
